@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Component from './components/component'
+import Propiedades from './components/propiedades'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,6 +32,17 @@ function App() {
       </p>
       <section>
         <Component msg="Hola soy un componente funcional expresado desde una prop"/>
+        <hr />
+        <Propiedades 
+        cadena="Soy un texto" 
+        numero={23} 
+        booleano={false} 
+        arreglo={[1,2,3]} 
+        objeto={{nombre: "Fabricio", edad: 23}}
+        elementoReact={<i>Soy un elemento de react</i>}
+        funciones={(num) => num * num}
+        componenteReact={<Component msg="Soy un componente que entra por una prop"/>}
+        />
       </section>
     </>
   )
