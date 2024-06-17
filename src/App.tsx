@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Component from './components/component'
 import Propiedades from './components/propiedades'
+import RenderizadoCondicional from './components/RenderizadoCondicional'
+import RenderizadoElementos from './components/RenderizadoElementos'
+import Eventos from './components/Eventos'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -43,6 +46,10 @@ function App() {
         funciones={(num) => num * num}
         componenteReact={<Component msg="Soy un componente que entra por una prop"/>}
         />
+        {/* <Estado/> */}
+        <RenderizadoCondicional/>
+        <RenderizadoElementos/>
+        <Eventos/>
       </section>
     </>
   )
