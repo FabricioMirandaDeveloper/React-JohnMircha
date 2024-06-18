@@ -6,7 +6,7 @@ import Component from './components/component'
 import Propiedades from './components/propiedades'
 import RenderizadoCondicional from './components/RenderizadoCondicional'
 import RenderizadoElementos from './components/RenderizadoElementos'
-import Eventos from './components/Eventos'
+import {EventosES6, EventosES7} from './components/Eventos'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -49,7 +49,9 @@ function App() {
         {/* <Estado/> */}
         <RenderizadoCondicional/>
         <RenderizadoElementos/>
-        <Eventos/>
+        <EventosES6/>
+        <hr />
+        <EventosES7/>
       </section>
     </>
   )
