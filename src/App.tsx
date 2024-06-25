@@ -10,6 +10,7 @@ import {EventosES6, EventosES7, MasSobreEventos} from './components/Eventos'
 import Padre from './components/ComunicacionComponentes'
 import CicloVida from './components/CicloDeVida'
 import AjaxApis from './components/AjaxApis'
+import ContadorHooks from './components/ContadorHooks'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -64,6 +65,7 @@ function App() {
         <hr />
         <CicloVida/>
         <hr />
+        <ContadorHooks/>
       </section>
     </>
   )
