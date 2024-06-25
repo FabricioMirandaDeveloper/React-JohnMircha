@@ -8,6 +8,8 @@ import RenderizadoCondicional from './components/RenderizadoCondicional'
 import RenderizadoElementos from './components/RenderizadoElementos'
 import {EventosES6, EventosES7, MasSobreEventos} from './components/Eventos'
 import Padre from './components/ComunicacionComponentes'
+import CicloVida from './components/CicloDeVida'
+import AjaxApis from './components/AjaxApis'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,6 +37,8 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <section>
+        <AjaxApis/>
+        <hr />
         <Component msg="Hola soy un componente funcional expresado desde una prop"/>
         <hr />
         <Propiedades 
@@ -55,7 +59,11 @@ function App() {
         <EventosES7/>
         <hr />
         <MasSobreEventos/>
+        <hr />
         <Padre/>
+        <hr />
+        <CicloVida/>
+        <hr />
       </section>
     </>
   )
