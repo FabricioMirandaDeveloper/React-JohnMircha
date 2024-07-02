@@ -13,6 +13,7 @@ import AjaxApis from './components/AjaxApis'
 import ContadorHooks from './components/ContadorHooks'
 import ScrollHocks from './components/ScrollHocks'
 import RelojHooks from './components/RelojHooks'
+import AjaxHooks from './components/AjaxHooks'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -72,6 +73,8 @@ function App() {
         <ScrollHocks/>
         <hr />
         <RelojHooks/>
+        <hr />
+        <AjaxHooks/>
       </section>
     </>
   )

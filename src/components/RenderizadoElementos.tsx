@@ -16,7 +16,7 @@ export default class RenderizadoElementos extends Component {
     };
   }
   render() {
-    console.log(data);
+    /* console.log(data); */
 
     return (
       <>
