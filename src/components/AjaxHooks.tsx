@@ -33,10 +33,14 @@ export default function AjaxHooks() {
     const getPokemons = async (url) => {
       const res = await fetch(url),
         json = await res.json()
-      console.log(json);
+      /* console.log(json); */
+      
       json.results.forEach(async (el) => {
         const res = await fetch(el.url),
           json = await res.json()
+          /* console.log(json); */
+          
+          
         const pokemon = {
           id: json.id,
           name: json.name,
@@ -55,8 +59,8 @@ export default function AjaxHooks() {
       {pokemons.length === 0 ? (
         <h2>Cargando...</h2>
       ) : (
-        pokemons.map((el) => (
-          <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
+        pokemons.map((el, index) => (
+          <Pokemon key={index} name={el.name} avatar={el.avatar} />
         ))
       )}
     </>
